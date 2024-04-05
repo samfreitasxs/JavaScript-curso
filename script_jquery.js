@@ -10,8 +10,10 @@ $(function(){
 		$('p').css("background-color", "red");
 		$('#mensagem')
 			.text("Cor alterada com sucesso!")
-			.css({color:'red', border:'1px solid', backgroundColor:'#FF6347'})
+			.css({color:'red', border:'1px solid'})
 			.delay(3000)
-			.fadeOut('fast');
+			.addClass('green');
+
+		$('button').removeClass('red');
 	});
 });
